@@ -1,0 +1,24 @@
+<h2>Busquedas</h2>
+<hr>
+        <!--El [routerLinkActiveOptions] solo se usa porque
+        tenemos un path "" : vacio en el routing.-->
+<ul class="list-group">
+    <li routerLink="" 
+        routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact:true}"
+        class="list-group-item">
+        Buscar país
+    </li>
+
+    <li routerLink="region" 
+        routerLinkActive="active" 
+        class="list-group-item">
+        Buscar región
+    </li>
+
+    <li routerLink="capital" 
+        routerLinkActive="active" 
+        class="list-group-item">
+        Buscar capital
+    </li>
+</ul>
